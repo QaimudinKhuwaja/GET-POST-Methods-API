@@ -44,7 +44,7 @@
 import React from 'react'
 import Form from './components/Form'
 const home =async () => {
-    const res = await fetch('http://localhost:3000/api/hello',{
+    const res = await fetch('/api/hello',{
         cache: 'no-store'
     })
     const data = await res.json()
